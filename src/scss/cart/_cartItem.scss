@@ -1,9 +1,12 @@
+@import '../config/variables';
+
 .cartitem_action{
   width: 90%;
   margin: auto;
   display:flex;
+  align-items: center;
   &_button{
-    color: #df4759;
+    color: $red-color;
     font-weight: 600;
     font-family: cursive;
     width: 55%;
@@ -13,25 +16,35 @@
     border: none;
     border-radius: 0.25em;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: $white-color;
     &:hover {
       transform: scale(1.02);
       transition: all 0.5s ease;
     }
     &:active {
-      background-color: #eeeeee;
+      background-color: $pale-color;
     }
   }
 }
 
 .qty{
+  height: 50px;
+  border-radius: 0.25em;
+  color: $white-color;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 45%;
+  font-size: 1rem;
+  font-weight: 600;
   margin-left: 0.25em;
+  background-color: $dark-color;
+  padding: 0.25em;
   input{
-    height:60%;
-    width: 50%;
+    margin: 0.12em auto;
+    border-radius: 0.25em;
+    border: 2px solid $dark-color;
+    height: 60%;
+    width: 40%;
   }
 }

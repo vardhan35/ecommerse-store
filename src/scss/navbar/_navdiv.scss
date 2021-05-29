@@ -1,3 +1,5 @@
+@import '../config/variables';
+
 .navdiv{
   display:flex;
   height:100%;
@@ -8,9 +10,10 @@
   align-items: center;
   display: flex;
   a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight:500;
     padding: 0.3em;
-    color: #30384e;
+    color: $dark-color;
     font-weight: 500;
     margin: 0.2em auto;
   }
@@ -25,7 +28,7 @@
   }
   a:hover::after {
     width: 100%;
-    background-color: #30384e;
+    background-color: $dark-color;
   }
 }
 
@@ -34,19 +37,19 @@
   display: flex;
   margin: auto 2em;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   outline: none;
   a {
-    color: #f6c90e;
-    background-color: #303841;
-    border: 3px solid #303841;
+    color: $yellow-color;
+    background-color: $dark-color;
+    border: 3px solid $dark-color;
     border-radius: 0.25em;
-    padding: 0.35em;
+    padding: 0.5em 0.6em;
   }
   a:hover {
     background-color: #f6c90e;
-    color: #3a4750;
-    border: 3px solid #3a4750;
+    color: $light-color;
+    border: 3px solid $light-color;
   }
 }
