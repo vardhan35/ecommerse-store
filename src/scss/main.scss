@@ -7,4 +7,65 @@
 @import './cart/emptyCart';
 @import './login/login';
 
+@media (max-width:$medium-width) {
+  .sidebar{
+    display: none;
+  }
+  .home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_container{
+    float: none;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item{
+    width: 250px;
+  }
+  .navdiv{
+    display:none;
+  }
+  .navbar{
+    &_hamburger{
+      display: block;
+    }
+  }
+  .sidebarResp{
+    display: block;
+    .userInfoResp{
+      text-align: center;
+      width: 90%;
+      margin:1em auto 1.5em;
+    }
+    .cartInfoResp{
+      margin: 0.5em auto;
+      width: 90%;
+      text-align: center;
+      .totalResp{
+        width: 90%;
+        margin: 0.5em auto;
+        h3{
+          margin: 0.5em auto;
+        }
+      }
+      button{
+        width: 200px;
+        color: $yellow-color;
+        background-color: $dark-color;
+      }
+    }
+  }
+};
+
+@media (max-width: $small-width){
+  .item{
+    width: 90%;
+    margin: 0 1em 2em;
+  }
+}
 
