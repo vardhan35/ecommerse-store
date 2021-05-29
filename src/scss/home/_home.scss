@@ -1,0 +1,68 @@
+@import '../config/variables';
+
+.home{
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+
+.home_container{
+  width: 70%;
+  float: right;
+  margin:100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+
+.item{
+  width: 265px;
+  height: 450px;
+  margin: 0 1em 2em 1em;
+  background-color: $white-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.09);
+  &_img{
+    width: 250px;
+    height: 250px;
+    margin: 0.5em auto;
+  }
+  &_info{
+    text-align: left;
+    margin-left: 1em;
+    h1 {
+      margin: 0.12em auto;
+    }
+    p {
+      margin: 0.12em auto;
+    }
+  }
+  &_action{
+    width: 100%;
+    margin: 0.5em auto 0 auto;
+    text-align: center;
+    &_button{
+      color: $white-color;
+      max-width: 300px;
+      width: 80%;
+      height: 40px;
+      font-size: 1rem;
+      margin: 1em auto 0 auto;
+      border: none;
+      border-radius: 0.25em;
+      cursor: pointer;
+      background-color: $dark-color;
+      &:hover {
+        transform: scale(1.02);
+        transition: all 0.5s ease;
+        background-color: $light-color;
+      }
+      &:active {
+        background-color: $pale-color;
+      }
+    }
+  }
+}

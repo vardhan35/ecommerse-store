@@ -1,0 +1,29 @@
+.emptycart{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  button{
+    margin: 1em auto;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 0.25em;
+    border: none;
+    background-color: #303841;
+    a {
+      text-decoration: none;
+      list-style: none;
+      color: white;
+    }    &:hover {
+      transform: scale(1.02);
+      transition: all 0.2s ease-in;
+      background-color: #3a4750;
+    }
+    &:active {
+      background-color: #eeeeee;
+    }
+  }
+}

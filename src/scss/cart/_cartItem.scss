@@ -1,0 +1,37 @@
+.cartitem_action{
+  width: 90%;
+  margin: auto;
+  display:flex;
+  &_button{
+    color: #df4759;
+    font-weight: 600;
+    font-family: cursive;
+    width: 55%;
+    height: 40px;
+    font-size: 1rem;
+    margin: 1 auto 0.5em 0.5em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    background-color: #ffffff;
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.5s ease;
+    }
+    &:active {
+      background-color: #eeeeee;
+    }
+  }
+}
+
+.qty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  margin-left: 0.25em;
+  input{
+    height:60%;
+    width: 50%;
+  }
+}
