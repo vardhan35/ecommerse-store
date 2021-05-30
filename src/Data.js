@@ -2,9 +2,9 @@ export const Data = [
   {
     id: 1,
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/815mGh4RubL._UL1500_.jpg",
-    name: "Nike Sneakers",
-    price: 399,
+      "https://images-eu.ssl-images-amazon.com/images/I/41XQP3N-SdL._SX300_SY300_QL70_FMwebp_.jpg",
+    name: "Keyboard",
+    price: 999,
   },
   {
     id: 2,
@@ -74,6 +74,13 @@ export const Data = [
     image:
       "https://m.media-amazon.com/images/I/61Hbk1tizlL._AC_UL480_FMwebp_QL60_.jpg",
     name: "Women Jacket",
+    price: 3999,
+  },
+  {
+    id: 12,
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/815mGh4RubL._UL1500_.jpg",
+    name: "Nike Sneakers",
     price: 3999,
   },
 ];

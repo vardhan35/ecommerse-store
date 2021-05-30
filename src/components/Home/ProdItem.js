@@ -8,7 +8,7 @@ const ProdItem = ({ itemData, addToCart }) => {
       <img className="item_img" src={itemData.image} alt="" />
       <div className="item_info">
         <h2 className="item_title">{itemData.name}</h2>
-        <p>{itemData.price}</p>
+        <p>{itemData.price},₹</p>
         <p>Ratings : ⭐⭐⭐⭐</p>
       </div>
       <div className="item_action">

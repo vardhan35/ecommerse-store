@@ -60,7 +60,7 @@ const SidebarResp = ({ cartItem, user }) => {
         <h2>Your Orders</h2>
         <div className="totalResp">
           <h3>Total Qty : {count}</h3>
-          <h3>Total Price : {prize},rs</h3>
+          <h3>Total Price : {prize},₹</h3>
         </div>
         <button type="button" onClick={(e) => handleClick(e)}>
           Place Order
