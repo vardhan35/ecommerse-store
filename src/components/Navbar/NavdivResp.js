@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { logoutUser } from "../../redux/user/userActions";
 
 const NavdivResp = ({ user, logout }) => {
+  const [isclick, setisClick] = useState(false);
+
   const handleClick = (e) => {
     e.preventDefault();
     logout({ user: null });
   };
+  useEffect(() => {
+    if (user) {
+      setisClick(!isclick);
+    }
+  }, [user]);
   return (
     <div className="navdivResp">
       <div className="navlistResp">
@@ -15,7 +22,7 @@ const NavdivResp = ({ user, logout }) => {
         <NavLink to="/cart">Cart</NavLink>
       </div>
       <div className="login">
-        {user ? (
+        {isclick ? (
           <NavLink to="/login" onClick={(e) => handleClick(e)}>
             Logout
           </NavLink>
