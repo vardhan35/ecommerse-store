@@ -36,6 +36,7 @@
     "react-uuid": "^1.0.2",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
     "regenerator-runtime": "^0.13.7"
   }
 }

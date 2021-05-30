@@ -10,10 +10,12 @@ module.exports = {
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   devServer: {
     port: 8080,
     contentBase: path.resolve(__dirname, "dist"),
+    historyApiFallback: true,
   },
   module: {
     rules: [

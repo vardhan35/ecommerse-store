@@ -19,6 +19,11 @@ const index = ({ login }) => {
         password: password,
         loggedIn: true,
       });
+      setfirstName = "";
+      setlastName = "";
+      setconformpassword = "";
+      setemail = "";
+      setpassword = "";
     } else {
       window.alert("Passwords Does Not Match");
     }

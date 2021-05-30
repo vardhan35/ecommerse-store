@@ -15,12 +15,12 @@ const Navdiv = ({ user, logout }) => {
         <NavLink to="/cart">Cart</NavLink>
       </div>
       <div className="login">
-        {user ? (
-          <NavLink to="/login" onClick={(e) => handleClick(e)}>
+        {!user ? (
+          <NavLink to="/login">Login</NavLink>
+        ) : (
+          <NavLink to="/" onClick={(e) => handleClick(e)}>
             Logout
           </NavLink>
-        ) : (
-          <NavLink to="/login">Login</NavLink>
         )}
       </div>
     </div>
