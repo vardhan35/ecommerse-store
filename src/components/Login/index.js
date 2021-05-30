@@ -19,11 +19,11 @@ const index = ({ login }) => {
         password: password,
         loggedIn: true,
       });
-      setfirstName = "";
-      setlastName = "";
-      setconformpassword = "";
-      setemail = "";
-      setpassword = "";
+      setfirstName("");
+      setlastName("");
+      setemail("");
+      setpassword("");
+      setconformpassword("");
     } else {
       window.alert("Passwords Does Not Match");
     }
@@ -46,6 +46,7 @@ const index = ({ login }) => {
               setfirstName(e.target.value);
             }}
             required
+            autoComplete="on"
           />
           <input
             type="text"
@@ -56,6 +57,7 @@ const index = ({ login }) => {
               setlastName(e.target.value);
             }}
             required
+            autoComplete="on"
           />
           <input
             type="email"
@@ -66,6 +68,7 @@ const index = ({ login }) => {
               setemail(e.target.value);
             }}
             required
+            autoComplete="on"
           />
           <input
             type="password"
@@ -76,6 +79,7 @@ const index = ({ login }) => {
               setpassword(e.target.value);
             }}
             required
+            autoComplete="off"
           />
           <input
             type="password"
@@ -86,6 +90,7 @@ const index = ({ login }) => {
               setconformpassword(e.target.value);
             }}
             required
+            autoComplete="off"
           />
           <button type="submit">Login</button>
         </form>

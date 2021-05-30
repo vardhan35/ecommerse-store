@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { logoutUser } from "../../redux/user/userActions";
 
 const Navdiv = ({ user, logout }) => {
+  const [isclick, setisClick] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     logout({ user: null });
   };
+  useEffect(() => {
+    if (user) {
+      setisClick(!isclick);
+    }
+  }, [user]);
   return (
     <div className="navdiv">
       <div className="navlist">
@@ -15,12 +21,12 @@ const Navdiv = ({ user, logout }) => {
         <NavLink to="/cart">Cart</NavLink>
       </div>
       <div className="login">
-        {!user ? (
-          <NavLink to="/login">Login</NavLink>
-        ) : (
+        {isclick ? (
           <NavLink to="/" onClick={(e) => handleClick(e)}>
             Logout
           </NavLink>
+        ) : (
+          <NavLink to="/login">Login</NavLink>
         )}
       </div>
     </div>
