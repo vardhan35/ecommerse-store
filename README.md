@@ -1,5 +1,5 @@
 ## This is e-commerce Store using react js.
-![](src/image/ecom-app.png)
+![](src/image/ecom-app-min.png)
 ##### This is project for my portFolio website.
 
 The app is Built with react,react-dom and configured with webpack.
