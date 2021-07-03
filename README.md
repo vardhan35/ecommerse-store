@@ -19,7 +19,7 @@ The app is styled by scss.
 
 ##### Features I Wanted to Add
 
-1.Admin Login,Account etc
-2.Storage System.
-3.Filter Search System
-4.Categories for Merch.
+1. Admin Login,Account etc
+2. Storage System.
+3. Filter Search System
+4. Categories for Merch.
