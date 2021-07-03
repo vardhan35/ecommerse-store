@@ -32,6 +32,9 @@ const index = ({ login }) => {
   return (
     <div className="login_container">
       <div className="login_form">
+        <div className="form_header">
+          <h2>Login Here</h2>
+        </div>
         <form
           onSubmit={(e) => {
             handleSubmit(e);

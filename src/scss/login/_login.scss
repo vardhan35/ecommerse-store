@@ -1,22 +1,28 @@
-@import '../config/variables';
+@import "../config/variables";
 
 .login_container {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.login_form{
+.form_header {
+  text-align: center;
+  margin: 0.5em auto;
+  color: $dark-color;
+}
+
+.login_form {
   margin: auto;
   width: 90%;
   max-width: 400px;
-  form{
+  form {
     display: flex;
     flex-direction: column;
 
-    input{
+    input {
       font-size: 0.95rem;
       padding: 0.5em 0.25em;
       height: 40px;
@@ -24,17 +30,17 @@
       margin: 0.5em auto;
       border: 2px solid $light-color;
       border-radius: 0.25em;
-      :focus{
-        outline:none;
+      :focus {
+        outline: none;
       }
     }
-    button{
+    button {
       width: 70%;
       margin: 1em auto;
-      background-color:$dark-color;
-      color:$white-color;
+      background-color: $dark-color;
+      color: $white-color;
     }
-    button:hover{
+    button:hover {
       transform: scale(1.02);
       transition: all 0.2s ease;
     }

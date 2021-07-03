@@ -33,7 +33,7 @@ const CartItem = ({ itemData, adjustQty, removeFromCart }) => {
           type="button"
           onClick={() => removeFromCart(itemData.id)}
         >
-          Remove Item
+          Remove
         </button>
       </div>
     </div>

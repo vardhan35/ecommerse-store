@@ -1,14 +1,14 @@
-@import '../config/variables';
+@import "../config/variables";
 
-.cartitem_action{
+.cartitem_action {
   width: 90%;
   margin: auto;
-  display:flex;
+  display: flex;
   align-items: center;
-  &_button{
+  &_button {
     color: $red-color;
     font-weight: 600;
-    font-family: cursive;
+    // font-family: cursive;
     width: 55%;
     height: 40px;
     font-size: 1rem;
@@ -27,7 +27,7 @@
   }
 }
 
-.qty{
+.qty {
   height: 50px;
   border-radius: 0.25em;
   color: $white-color;
@@ -40,7 +40,7 @@
   margin-left: 0.25em;
   background-color: $dark-color;
   padding: 0.25em;
-  input{
+  input {
     margin: 0.12em auto;
     border-radius: 0.25em;
     border: 2px solid $dark-color;
